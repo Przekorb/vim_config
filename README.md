@@ -1,4 +1,5 @@
 # vim_config
+A script to setup vim, and some bash aliases 
 ## Installation
 run the script : )
 ## Usage
