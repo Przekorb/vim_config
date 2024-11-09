@@ -4,7 +4,6 @@ A script to setup vim, and some bash aliases
 run the script : )
 ## Usage
 copying to system clipboard with "cp", after marking the text. <br>
-:CD directory - make nerdtree go to specific directory<br>
 :GREP input - run grep -RIi, loking for input <br>
 ctrl+w+t - opens terminal in vim<br>
 ctrl+w+x - closes a pane<br>
