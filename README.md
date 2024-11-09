@@ -8,7 +8,7 @@ copying to system clipboard with "cp", after marking the text. <br>
 ctrl+w+t - opens terminal in vim<br>
 ctrl+w+x - closes a pane<br>
 ctrl+w+arrowkey - switch between panes<br>
-ctrl+w+ctrl+arrowket - change pane size<br>
+ctrl+w+ctrl+arrowkey - change pane size<br>
 ## X11 error
 If copying doesn't work due to X11 error, it means X11 is configured incorrectly on your system.
 
