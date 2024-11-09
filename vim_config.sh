@@ -1,0 +1,31 @@
+#!/bin/bash
+echo "downloading plugin manager..."
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+echo "modifying .vimrc file..."
+{
+echo "set colorcolumn=80"
+echo "highlight ColorColumn ctermbg=black guibg=black"
+echo "set number"
+echo "\" Enable 256 color mode"
+echo "set t_Co=256"
+echo "\" Set dark gray background color"
+echo "highlight Normal ctermbg=235"
+echo "set nocompatible              \" Required for Vundle"
+echo "filetype off                  \" Required for Vundle"
+echo "\" Set up Vundle"
+echo "set rtp+=~/.vim/bundle/Vundle.vim"
+echo "call vundle#begin()"
+echo "\" Let Vundle manage itself"
+echo "Plugin 'VundleVim/Vundle.vim'"
+echo "Plugin 'christoomey/vim-system-copy'"
+echo "Plugin 'Preservim/nerdtree'"
+echo "\" ... Add more plugins here as needed"
+echo "call vundle#end()"
+echo "\" Optional: map Ctrl+n to toggle NERDTree"
+echo "map <C-n> :NERDTreeToggle<CR>"
+echo "\" Enables file type detection and indentation"
+echo "filetype plugin indent on"
+echo "syntax on"
+} > ~/.vimrc
+echo "installing plugins..."
+vim +PluginInstall +qall
